@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+header{
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.photo{
+    background-image: url(/media/274806903_1950036808513048_106128840240024002_n.jpg);
+    background-position: center -55px;
+    background-size: 391px;
+    filter: ;
+    flex-grow: 1;
+    
+}
+ul{
+    list-style: none;
+    width: 100%;
+    flex-grow: 15;
+    background-color: #000;
+
+}
+header ul li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+header ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+}
+header ul li:hover a{
+    color: #fff;
+    filter: drop-shadow(0px 0px 3px white);
+}
+header ul li:first-child{
+    background-color: #001621;
+}
+header ul li:first-child a , h1{
+    filter: drop-shadow(0px 0px 3px white);
+
+}
+header ul li i::before{
+    font-size: 30px;
+    
+}
+header ul li:hover {
+    background-color: #001621;
+}
+main{
+    background-color: #000;
+}
+main >div{
+    height: 100vh;
+    width: 100%;
+    background-image: url(media/frontend.jpg);
+    background-size: auto;
+}
+
+.bar{
+    color: #fff;
+    background-color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+    header{
+        height: 80px;
+        background-color: black;
+
+        
+    }
+    main >div{
+        height: calc(100vh - 80px);
+    }
+    main h1{
+        font-size: 28px !important;
+    }
+
+}
+
+
+/* section */
+section{
+    background-color: #000;
+}
+section div h2{
+    position: relative;
+}
+section div h2::after{
+    content:"";
+    width: 35%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: block;
+    margin-top: 5px;
+
+}
+.html{
+    color: #f75421;
+}
+.css{
+    color: #0170ba;
+}
+.js{
+    background-color: #f7df37;
+    color: #000;
+}
+.b{
+    background-color: #7532f9;
+}
+.react{
+    width: 32px;
+    height: 32px;
+}
