@@ -32,6 +32,7 @@ header ul li{
     display: flex;
     align-items: center;
     height: 100%;
+    transition: .5s;
 }
 header ul li a{
     display: flex;
@@ -43,6 +44,7 @@ header ul li a{
     text-decoration: none;
     color: #fff;
     text-transform: capitalize;
+    transition: filter .5s;
 }
 header ul li:hover a{
     color: #fff;
@@ -129,3 +131,10 @@ section div h2::after{
     width: 32px;
     height: 32px;
 }
+#work a img{
+    transition: filter .5s;
+}
+#work a:hover img{
+    filter: brightness(1.42);
+}
+
