@@ -72,6 +72,7 @@ main >div{
     width: 100%;
     background-image: url(img/frontend.jpg);
     background-size: auto;
+    background-blend-mode: color-burn;
 }
 
 .bar{
@@ -133,8 +134,14 @@ section div h2::after{
 }
 #work a img{
     transition: filter .5s;
+    height: 225px !important;
+    
 }
+
 #work a:hover img{
     filter: brightness(1.42);
 }
+/* #work div div >div a{
+    height: 225px;
+} */
 
